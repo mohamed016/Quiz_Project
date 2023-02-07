@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="containerBox">
+        <div class="box container">
+            <div class="final" style="display: none">
+                <h2>that question that you are answer</h2>
+                <p id="score" class="d-flex justify-content-center"></p>
+                <div class="text-center">
+                    <button id="againButton" class="btn submit ">Again</button>
+                </div>
+            </div>
+            <div class="quiz" style="display: none">
+                <div class="containerCount container">
+                    <div class=" count">
+                        <p class="current"></p>
+                        <p class="mx-2">of</p>
+                        <p class="total"></p>
+                    </div>
+                </div>
+                <div class="text-center  qColor my-3">
+                    <h3 id="question"></h3>
+                </div>
+                <div class="containerQuestion">
+                    <div id="q1" class="container qColor d-flex w-auto"></div>
+                    <div id="q2" class="container qColor d-flex my-2 w-auto"></div>
+                    <div id="q3" class="container qColor d-flex w-auto"></div>
+                    <div id="q4" class="container qColor d-flex my-2 w-auto"></div>
+                </div>
+                <div class="d-flex justify-content-center">
+
+                    <button id="nextBtn" class="btn submit ">Next</button>
+                </div>
+            </div>
+
+            <div class="setting cor  py-3 ">
+                <div class="row">
+                    <div class="category container">
+                        <label class="w-100">Select Category:</label>
+                        <select id="Category" class="w-100">
+                            <option value="22">Geography</option>
+                            <option value="23">History</option>
+                            <option value="24">Politics</option>
+                            <option value="25">Art</option>
+                        </select>
+                    </div>
+                    <div class="amount my-3">
+                        <label class="w-100">Number of Questions:</label>
+                        <input class="w-100" type="text" id="nquestion" />
+                    </div>
+                    <div id="difficulty">
+                        <label class="w-100">Select Difficulty:</label>
+                        <div class="ms-2 mt-2">
+                            <div>
+                                <input type="radio" value="hard" name="choose" id="difficult" />
+                                <label for="difficult">Difficult</label>
+                            </div>
+                            <div>
+                                <input type="radio" value="medium" name="choose" id="Medium" />
+                                <label for="Medium">Medium</label>
+                            </div>
+                            <div>
+                                <input type="radio" value="easy" name="choose" id="Easy" />
+                                <label for="Easy">Easy</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" text-center py-3">
+                        <button type="button" class="btn submit" id="btn">submit</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="section container">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
